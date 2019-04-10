@@ -13,7 +13,7 @@ COPY . ./
 # Run commands that generate unique files every time
 RUN composer dump-autoload --optimize
 
-FROM phppm/nginx:latest
+FROM erictendian/phppm-nginx:latest
 
 COPY . ./
 
